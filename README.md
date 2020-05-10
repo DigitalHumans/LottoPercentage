@@ -9,6 +9,12 @@
 엑셀 브랜치도 위의 규칙을 따를지는 알아서 정할 것.
 ## 라이센스
 이 리포는 BSD 3Clauses 라이센스를 따르므로 그에 맞게 사용할 것. 
-저자: LJLee37, bbasung1, borok(숫자기억안남), spenshark.
+
+저자: 
+* LJLee37
+* bbasung1
+* borok(숫자기억안남)
+* spenshark
+
 라이브러리 xlnt를 사용함. [xlnt의 라이센스] (https://github.com/tfussell/xlnt/blob/master/LICENSE.md)
 
