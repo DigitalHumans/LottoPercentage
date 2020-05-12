@@ -3,29 +3,23 @@
 int main(void)
 {
   int a;
-  printf("모드 입력:");
-  scanf("%d",&a);
-  switch(a)
+  while(1)
   {
-    case 1
+    printf("모드 입력:");
+    scanf("%d",&a);
+    switch(a)
     {
+      case 1:
+      
+      case 2:
 
-    }
-    case 2
-    {
+      case 3:
 
-    }
-    case 3
-    {
+      case 4:
 
-    }
-    case 4
-    {
+      default:
+        printf("잘못된 명령어입니다.")
 
-    }
-    default
-    {
-        
     }
   }
 }
