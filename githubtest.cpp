@@ -23,14 +23,19 @@ int main(void)
         {
             temp2[i]=temp1[i]- 910*7/45;
         }
+        break;
       case 2:
+          break;
 
       case 3:
+        break;
 
       case 4:
+        break;
 
       default:
         printf("잘못된 명령어입니다.");
+        break;
 
     }
   }
