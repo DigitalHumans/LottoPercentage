@@ -36,7 +36,6 @@ int main(void)
       default:
         printf("잘못된 명령어입니다.\n");
         break;
-1
 
     }
   }
