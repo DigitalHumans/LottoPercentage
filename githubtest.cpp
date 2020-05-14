@@ -23,6 +23,13 @@ int main(void)
         {
             temp2[i]=temp1[i]- 910*7/45;
         }
+        sort(temp2.begin(),temp2.end());
+        printf("추천 번호는");
+        for(int i=0;i<7;i++)
+        {
+          printf("%d",temp2[i]);
+        }
+        printf("입니다");
         break;
       case 2:
           break;
