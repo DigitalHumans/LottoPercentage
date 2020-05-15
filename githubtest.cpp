@@ -12,7 +12,6 @@ int main(void)
     printf("모드 입력:");
     scanf("%d",&a);
     int temp1[45];//(보너스 포함)숫자가 나온 횟수
-    float temp2[45];//편차
     vector <pair<int, float> >temp3;//편차 sort
     
     switch(a)
@@ -21,19 +20,17 @@ int main(void)
         for(int i=0;i<45;i++)
         {
           temp1[i]=std::count(*raw,*(raw+700),i+1);
+          printf("%d",temp1[i]);
         }
+       
         for(int i=0;i<45;i++)
         {
-            temp2[i]=temp1[i]- 910*7/45;
-        }
-    
-        for(int i=0;i<45;i++)
-        {
-          temp3.push_back(pair<float, int>(temp2[i],i+1));
+          temp3.push_back(pair<float, int>(temp1[i],i+1));
         }
         sort(temp3.begin(),temp3.end());
+        
         printf("추천 로또 번호는 ");
-        for(int i=0;i<7;i++)
+        for(int i=44;i>=38;i--)
         {
           cout << temp3[i].second <<endl;
         }
