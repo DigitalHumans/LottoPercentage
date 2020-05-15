@@ -1,6 +1,7 @@
 #include <algorithm>
 #include <iostream>
 #include <vector>
+using namespace std;
 
 int main(void)
 {
@@ -13,7 +14,7 @@ int main(void)
     int temp1[45];//(보너스 포함)숫자가 나온 횟수
     float temp2[45];//편차
     vector <pair<int, float> >temp3;//편차 sort
-    float temp4[45];//많이 나오는 빈도수
+    
     switch(a)
     {
       case 1:
@@ -28,17 +29,13 @@ int main(void)
     
         for(int i=0;i<45;i++)
         {
-          temp3.push_back(pair<int, float>(i+1,temp2[i]));
+          temp3.push_back(pair<float, int>(temp2[i],i+1));
         }
-        bool cmp(const pair<int, int> &a, const pair<float, float> &b)
-        {
-          return a.second <b.second;
-        }
-
+        sort(temp3.begin(),temp3.end());
         printf("추천 로또 번호는 ");
         for(int i=0;i<7;i++)
         {
-          printf("%d"temp3[i]);
+          cout << temp3[i].second <<endl;
         }
         printf("입니다.");
         break;
