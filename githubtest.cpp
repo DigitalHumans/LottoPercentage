@@ -11,6 +11,7 @@ private:
 public:
     auto normal_predict(int startRange, int endRange)//범위에 따라 단순 예상
     {
+      //commit test
 	//기범이 파이팅
     }
     auto pattern_predict(int startRange, int endRange)//패턴인식 예상
