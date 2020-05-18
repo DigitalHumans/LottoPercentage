@@ -7,6 +7,24 @@ class lottoData_t
 {
 private:
     vector<vector<int>> rawData;
+
+public:
+    auto normal_predict(int startRange, int endRange)//범위에 따라 단순 예상
+    {
+	//기범이 파이팅
+    }
+    auto pattern_predict(int startRange, int endRange)//패턴인식 예상
+    {
+	//성우 파이팅
+    }
+    lottoData_t()
+    {
+	//쩨 파이팅
+    }
+    lottoData_t(string path)
+    {
+	//쩨 파이팅
+    }
 };
 
 int main(void)
