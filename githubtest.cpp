@@ -11,8 +11,7 @@ private:
 public:
     auto normal_predict(int startRange, int endRange)//범위에 따라 단순 예상
     {
-      //commit test
-	//기범이 파이팅
+      int test;
     }
     auto pattern_predict(int startRange, int endRange)//패턴인식 예상
     {
@@ -38,6 +37,7 @@ int main(void)
 	cin >> a;
     int temp1[45];//(보너스 포함)숫자가 나온 횟수
     vector <pair<int, float> >temp3;//편차 sort
+    printf("class test %d",nomarl_predict.test)//class test를 위해 임시로 작성한 부분.코드리뷰후 삭제 예정
     
     switch(a)
     {
