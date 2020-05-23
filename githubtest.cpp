@@ -7,12 +7,12 @@ using namespace std;
 class lottoData_t
 {
 private:
-    vector<vector<int>> rawData;//rawData[n][6] : ë³´ë„ˆìŠ¤ë²ˆí˜¸, rawData[n][0] ~ rawData[n][5] : ë‹¹ì²¨ë²ˆí˜¸
+    vector<vector<int>> rawData;//rawData[n][6] : º¸³Ê½º¹øÈ£, rawData[n][0] ~ rawData[n][5] : ´çÃ·¹øÈ£
 public:
-    auto normal_predict(int startRange, int endRange)//ë²”ìœ„ì— ë”°ë¼ ë‹¨ìˆœ ì˜ˆìƒ
+    auto normal_predict(int startRange, int endRange)//¹üÀ§¿¡ µû¶ó ´Ü¼ø ¿¹»ó
     {
-        //ê¸°ë²”ì´ íŒŒì´íŒ…
-        vector<pair<float, int> >temp3;//í¸ì°¨ sort
+        //±â¹üÀÌ ÆÄÀÌÆÃ
+        vector<pair<float, int> >temp3;//ÆíÂ÷ sort
         for(int i=0;i<45;i++)
         {
         // temp1[i]=std::count(*raw,*(raw+700),i+1);
@@ -28,9 +28,9 @@ public:
         sort(retval.begin(), retval.end());
         return retval;
     }
-    auto pattern_predict(int startRange, int endRange)//íŒ¨í„´ì¸ì‹ ì˜ˆìƒ
+    auto pattern_predict(int startRange, int endRange)//ÆĞÅÏÀÎ½Ä ¿¹»ó
     {
-        //ì„±ìš° íŒŒì´íŒ…
+        //¼º¿ì ÆÄÀÌÆÃ
     }
     lottoData_t(string path = "./data.xlsx")
     {
@@ -53,17 +53,17 @@ int main(void)
     while(1)
     {
         lottoData_t lottoData;
-        cout << "ëª¨ë“œ ì…ë ¥ : ";
+        cout << "¸ğµå ÀÔ·Â : ";
         cin >> a;
         vector<int>temp;
         switch(a)
         {
         case 1:
             temp = lottoData.normal_predict(1, 911);
-            cout << "ì¶”ì²œ ë¡œë˜ ë²ˆí˜¸ëŠ” ";
+            cout << "ÃßÃµ ·Î¶Ç ¹øÈ£´Â ";
             for(auto i : temp)
               cout << i << " ";
-            cout << "ì…ë‹ˆë‹¤." << endl;
+            cout << "ÀÔ´Ï´Ù." << endl;
             break;
         case 2:
             break;
@@ -72,7 +72,7 @@ int main(void)
         case 4:
             break;
         default:
-            cout << "ì˜ëª»ëœ ëª…ë ¹ì–´ì…ë‹ˆë‹¤." << endl;
+            cout << "Àß¸øµÈ ¸í·É¾îÀÔ´Ï´Ù." << endl;
             break;
         }
     }
