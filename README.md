@@ -57,7 +57,7 @@
 저자: 
 * LJLee37
 * bbasung1
-* Qstion05
+* qstion05
 * spenshark
 
 라이브러리 xlnt를 사용함. [xlnt의 라이센스](https://github.com/tfussell/xlnt/blob/master/LICENSE.md)
