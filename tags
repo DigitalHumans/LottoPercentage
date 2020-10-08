@@ -1,0 +1,13 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+lottoData_t	githubtest.cpp	/^    lottoData_t()$/;"	f	class:lottoData_t
+lottoData_t	githubtest.cpp	/^    lottoData_t(string path)$/;"	f	class:lottoData_t
+lottoData_t	githubtest.cpp	/^class lottoData_t$/;"	c	file:
+main	githubtest.cpp	/^int main(void)$/;"	f
+normal_predict	githubtest.cpp	/^    auto normal_predict(int startRange, int endRange)\/\/범위에 따라 단순 예상$/;"	f	class:lottoData_t
+pattern_predict	githubtest.cpp	/^    auto pattern_predict(int startRange, int endRange)\/\/패턴인식 예상$/;"	f	class:lottoData_t
+rawData	githubtest.cpp	/^    vector<vector<int>> rawData;$/;"	m	class:lottoData_t	file:
