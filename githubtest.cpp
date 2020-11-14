@@ -30,7 +30,30 @@ public:
     }
     auto pattern_predict(int startRange, int endRange)//패턴인식 예상
     {
+        /*
+        당첨번호에 n번이 있을때, 가장 많이 나온 번호 출력
+        출력형식: n번 -> a번, k% (n = 1~45)
+        만약 동일한 확률이 있을 경우엔 같이 출력.
+        출력형식: n번 -> a,b,c번 k% (n = 1~45)
+
+        */
+        for(int Range = startRange; Range <= endRange; Range++){
+            for(int Cp_num = 1; Cp_num <= 45; Cp_num++)
+                for(int Co_num = 0; Co_num <= 6; Co_num++)
+                    if (rawData[RangeR][Co_num] == Cp_num)
+                        for(int Wr_num = 0; Wr_num <= 6; Wr_num++)
+                            if (rawData[RangeR][Wr_num] != i)
+                                arr[Cp_num][rawData[RangeR][Wr_num] - 1] += 1;
+        }
+
+        for(int Ma_num = 1; Ma_num<= 45; Ma_num++){
+            cout<<Ma_num<<"번이 나왔을때"<<endl;
+            for(int Sl_num = 1; Sl_num<= 45; Sl_num++)
+                cout<<Sl_num<<"이 나온 횟수 : "<< arr[Ma_num][Sl_num] <<endl;
+        }
+
         //성우 파이팅
+        //사랑해 지형아...
     }
     lottoData_t(string path = "./data.xlsx")
     {
