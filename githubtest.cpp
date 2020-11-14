@@ -37,6 +37,7 @@ public:
         출력형식: n번 -> a,b,c번 k% (n = 1~45)
 
         */
+        int arr[46][46];
         for(int Range = startRange; Range <= endRange; Range++){
             for(int Cp_num = 1; Cp_num <= 45; Cp_num++)
                 for(int Co_num = 0; Co_num <= 6; Co_num++)
@@ -53,7 +54,7 @@ public:
         }
 
         //성우 파이팅
-        //사랑해 지형아...
+        //사랑해
     }
     lottoData_t(string path = "./data.xlsx")
     {
